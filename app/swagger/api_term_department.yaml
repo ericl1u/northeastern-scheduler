@@ -1,0 +1,30 @@
+One department in a given term
+---
+tags:
+  - departments
+parameters:
+  - name: term_id
+    in: path
+    type: int
+    description: Term id
+    required: true
+    default: 201710
+  - name: department_id
+    in: path
+    type: string
+    description: Department id
+    required: true
+    default: EECE
+responses:
+  200:
+    description: Returns list of department ids and their names
+    schema:
+      properties:
+        department_id:
+          type: string
+          description: Department id
+          default: CS
+        department_name:
+          type: string
+          description: Department name
+          default: Computer Science

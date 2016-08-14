@@ -1,0 +1,11 @@
+.pic-container {
+    width: 100wh;
+    height: 88vh;
+    overflow-x: scroll;
+}
+
+.searchbox {
+    width: 300px;
+}
+
+.top-buffer { margin-top:20px; }

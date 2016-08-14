@@ -1,0 +1,17 @@
+All terms
+---
+tags:
+  - terms
+responses:
+  200:
+    description: Returns list of term ids and their names
+    schema:
+      properties:
+        term_id:
+          type: integer
+          description: Term id
+          default: 201710
+        term_name:
+          type: string
+          description: Term name
+          default: Fall 2016 Semester

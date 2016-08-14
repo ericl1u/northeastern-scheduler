@@ -1,0 +1,799 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/transitional.dtd">
+<HTML lang="en">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<META HTTP-EQUIV="Pragma" NAME="Cache-Control" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" NAME="Cache-Control" CONTENT="no-cache">
+<LINK REL="stylesheet" HREF="/css/web_defaultapp.css" TYPE="text/css">
+<LINK REL="stylesheet" HREF="/css/web_defaultprint.css" TYPE="text/css" media="print">
+<TITLE>Class Schedule Search</TITLE>
+<META HTTP-EQUIV="Content-Script-Type" NAME="Default_Script_Language" CONTENT="text/javascript">
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- Hide JavaScript from older browsers 
+window.onunload = function() {submitcount=0;}
+var submitcount=0;
+function checkSubmit() {
+if (submitcount == 0)
+   {
+   submitcount++;
+   return true;
+   }
+else
+   {
+alert("Your changes have already been submitted.");
+   return false;
+   }
+}
+//  End script hiding -->
+</SCRIPT>
+<SCRIPT LANGUAGE="JavaScript" TYPE="text/javascript">
+<!-- Hide JavaScript from older browsers 
+//  Function to open a window
+function windowOpen(window_url) {
+   helpWin = window.open(window_url,'','toolbar=yes,status=no,scrollbars=yes,menubar=yes,resizable=yes,directories=no,location=no,width=350,height=400');
+   if (document.images) { 
+       if (helpWin) helpWin.focus()
+   }
+}
+//  End script hiding -->
+</SCRIPT>
+</HEAD>
+<BODY>
+<DIV class="headerwrapperdiv">
+<DIV class="pageheaderdiv1">
+<A HREF="#main_content" onMouseover="window.status='Go to Main Content'; return true" onMouseout="window.status=''; return true" OnFocus="window.status='Go to Main Content'; return true" onBlur="window.status=''; return true" class="skiplinks">Go to Main Content</A>
+<H1>SCT WWW Information System</H1></DIV><DIV class="headerlinksdiv">
+</DIV>
+<TABLE  CLASS="plaintable" SUMMARY="This table displays Menu Items and Banner Search textbox."
+         WIDTH="100%">
+<TR>
+<TD CLASS="pldefault">
+<DIV class="headerlinksdiv2">
+&nbsp;
+</div>
+</TD>
+<TD CLASS="pldefault"><p class="rightaligntext"></p>
+<SPAN class="pageheaderlinks">
+<A HREF="/wtlhelp/twbhhelp.htm" accesskey="H" onClick="popup = window.open('/wtlhelp/twbhhelp.htm', 'PopupPage','height=500,width=450,scrollbars=yes,resizable=yes'); return false" target="_blank" onMouseOver="window.status='';  return true" onMouseOut="window.status=''; return true"onFocus="window.status='';  return true" onBlur="window.status=''; return true"  class="submenulinktext2">HELP</A>
+|
+<A HREF="twbkwbis.P_Logout" accesskey="3" class="submenulinktext2">EXIT</A>
+</span>
+</TD>
+</TR>
+</TABLE>
+</DIV>
+<DIV class="pagetitlediv">
+<TABLE  CLASS="plaintable" SUMMARY="This table displays title and static header displays."
+   WIDTH="100%">
+<TR>
+<TD CLASS="pldefault">
+<H2>Class Schedule Search</H2>
+</TD>
+<TD CLASS="pldefault">
+&nbsp;
+</TD>
+<TD CLASS="pldefault"><p class="rightaligntext"></p>
+<DIV class="staticheaders">
+Fall 2016 Semester<br>
+Jul 14, 2016<br>
+</div>
+</TD>
+</TR>
+<TR>
+<TD class="bg3" width="100%" colSpan=3><IMG SRC="/wtlgifs/web_transparent.gif" ALT="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10></TD>
+</TR>
+</TABLE>
+<a name="main_content"></a>
+</DIV>
+<DIV class="pagebodydiv">
+<!--  ** END OF twbkwbis.P_OpenDoc **  -->
+<DIV class="infotextdiv"><TABLE  CLASS="infotexttable" SUMMARY="This layout table contains information that may be helpful in understanding the content and functionality of this page.  It could be a brief set of instructions, a description of error messages, or other special information."><TR><TD CLASS="indefault"><IMG SRC="/wtlgifs/web_info_cascade.png" ALT="Information" CLASS="headerImg" TITLE="Information"  NAME="web_info" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=12 WIDTH=14></TD><TD CLASS="indefault"><SPAN class="infotext"> Use any combination of selection options to narrow your search for courses. <br><br>
+If you enter anything in the CRN box then the search will be by CRN and all other search options will be ignored.<br><br>
+You may select multiple subjects one-by-one.  On Windows, the <b><font color="FF0000"><i>Ctrl</i> </font></b> key on your keyboard is used to select more than one subject from the list. For MACs, the <b><font color="FF0000"><i>Command</i> </font></b> key is used.  Use the <b><font color="FF0000"><i>Shift</i> </font></b> key on your keyboard to select an entire range of subjects.  The same techniques for multiple selection work for Attribute Type. <br><br>
+The CRN, and Course Number, and Course Title fields do a case insensitive partial match on what is entered. Using the <b><font color="FF0000"><i>%</i> </font></b> key allows you to refine the partial match. For example, entering Art will return <b><font color="FF0000"><i>any</i> </font></b> course with Art in the title. Searching for Art% will return any course that begins with Art.</SPAN></TD></TR></TABLE><P></DIV>
+<FORM ACTION="NEUCLSS.p_class_search" METHOD="post">
+<INPUT TYPE="hidden" NAME="sel_day" VALUE="dummy">
+<INPUT TYPE="hidden" NAME="STU_TERM_IN" VALUE="201710">
+<INPUT TYPE="hidden" NAME="sel_subj" VALUE="dummy">
+<INPUT TYPE="hidden" NAME="sel_attr" VALUE="dummy">
+<INPUT TYPE="hidden" NAME="sel_schd" VALUE="dummy">
+<INPUT TYPE="hidden" NAME="sel_camp" VALUE="dummy">
+<INPUT TYPE="hidden" NAME="sel_insm" VALUE="dummy">
+<INPUT TYPE="hidden" NAME="sel_ptrm" VALUE="dummy">
+<INPUT TYPE="hidden" NAME="sel_levl" VALUE="dummy">
+<INPUT TYPE="hidden" NAME="sel_instr" VALUE="dummy">
+<INPUT TYPE="hidden" NAME="sel_seat" VALUE="dummy">
+<INPUT TYPE="hidden" NAME="p_msg_code" VALUE="">
+<TABLE  CLASS="dataentrytable" SUMMARY="Table is used to present the course search criteria">
+<TR>
+<TD CLASS="delabel" scope="row" ><LABEL for=crn_id><SPAN class="fieldlabeltext">CRN:</SPAN></LABEL></TD>
+<TD COLSPAN="7" CLASS="dedefault"><INPUT TYPE="text" NAME="sel_crn" SIZE="6" MAXLENGTH="5" ID="crn_id"></TD>
+</TR>
+<TR>
+<TD CLASS="delabel" scope="row" ><LABEL for=subjct_id><SPAN class="fieldlabeltext">Subject: </SPAN></LABEL></TD>
+<TD COLSPAN="7" CLASS="dedefault">
+<SELECT NAME="sel_subj" SIZE="8" MULTIPLE ID="subjct_id">
+<OPTION VALUE="%" SELECTED>All
+<OPTION VALUE="ACCT">Accounting - ACCT
+<OPTION VALUE="AFRS">African Studies - AFRS
+<OPTION VALUE="AFAM">African-American Studies - AFAM
+<OPTION VALUE="AMSL">American Sign Language - AMSL
+<OPTION VALUE="ANTH">Anthropology - ANTH
+<OPTION VALUE="ARAB">Arabic - ARAB
+<OPTION VALUE="ARCH">Architecture - ARCH
+<OPTION VALUE="ARMY">Army ROTC - ARMY
+<OPTION VALUE="ARTG">Art - Design - ARTG
+<OPTION VALUE="ARTF">Art - Fundamentals - ARTF
+<OPTION VALUE="ARTE">Art - General - ARTE
+<OPTION VALUE="ARTH">Art - History - ARTH
+<OPTION VALUE="ARTD">Art - Media Arts - ARTD
+<OPTION VALUE="ARTS">Art - Studio - ARTS
+<OPTION VALUE="ASNS">Asian Studies - ASNS
+<OPTION VALUE="BNSC">Behavioral Neuroscience - BNSC
+<OPTION VALUE="BIOC">Biochemistry - BIOC
+<OPTION VALUE="BIOE">Bioengineering - BIOE
+<OPTION VALUE="BINF">Bioinformatics - BINF
+<OPTION VALUE="BIOL">Biology - BIOL
+<OPTION VALUE="BIOT">Biotechnology - BIOT
+<OPTION VALUE="BUSN">Business Administration - BUSN
+<OPTION VALUE="EXSC">Cardiopulmonary & Exercise Sci - EXSC
+<OPTION VALUE="CHME">Chemical Engineering - CHME
+<OPTION VALUE="CHEM">Chemistry & Chemical Biology - CHEM
+<OPTION VALUE="CHNS">Chinese - CHNS
+<OPTION VALUE="CIVE">Civil & Environmental Engineer - CIVE
+<OPTION VALUE="COMM">Communication Studies - COMM
+<OPTION VALUE="CMMN">Communicatn Studies - CPS Spec - CMMN
+<OPTION VALUE="CS">Computer Science - CS
+<OPTION VALUE="CSYE">Computer Systems Engineering - CSYE
+<OPTION VALUE="EEAM">Coop/Exper Ed - Arts/Med/Dsgn - EEAM
+<OPTION VALUE="EESC">Coop/Exper Ed - Science - EESC
+<OPTION VALUE="EESH">Coop/Exper Ed - Soc Sci/Hum - EESH
+<OPTION VALUE="COOP">Cooperative Education - COOP
+<OPTION VALUE="CAEP">Counseling and Applied Ed Psyc - CAEP
+<OPTION VALUE="CRIM">Criminal Justice - CRIM
+<OPTION VALUE="CLTR">Culture - CLTR
+<OPTION VALUE="LITR">Culture - Literature - LITR
+<OPTION VALUE="DS">Data Science - DS
+<OPTION VALUE="DEAF">Deaf Studies - DEAF
+<OPTION VALUE="EVRN">Earth & Environ Sci - CPS Spec - EVRN
+<OPTION VALUE="ENVR">Earth & Environmental Sciences - ENVR
+<OPTION VALUE="EEMB">Ecology, Evolutn & Marine Biol - EEMB
+<OPTION VALUE="ECON">Economics - ECON
+<OPTION VALUE="ECNM">Economics - CPS Spec - ECNM
+<OPTION VALUE="EDUC">Education - EDUC
+<OPTION VALUE="EECE">Electrical and Comp Engineerng - EECE
+<OPTION VALUE="ENSY">Energy Systems - ENSY
+<OPTION VALUE="ENCP">Engineering Cooperative Ed - ENCP
+<OPTION VALUE="ENGR">Engineering Interdisciplinary - ENGR
+<OPTION VALUE="ENLR">Engineering Leadership - ENLR
+<OPTION VALUE="EMGT">Engineering Management - EMGT
+<OPTION VALUE="ENGL">English - ENGL
+<OPTION VALUE="ENGW">English Writing - ENGW
+<OPTION VALUE="ESLG">English as Scnd Lng - CPS Spec - ESLG
+<OPTION VALUE="ENTR">Entrepreneurship & Innovation - ENTR
+<OPTION VALUE="TECE">Entrepreneurship Technological - TECE
+<OPTION VALUE="ENVS">Environmental Studies - ENVS
+<OPTION VALUE="FINA">Finance & Insurance - FINA
+<OPTION VALUE="FSEM">First-Year Seminar - FSEM
+<OPTION VALUE="FRNH">French - FRNH
+<OPTION VALUE="GAME">Game Design - GAME
+<OPTION VALUE="GSND">Game Science and Design - GSND
+<OPTION VALUE="GE">General Engineering - GE
+<OPTION VALUE="GENS">General Studies - GENS
+<OPTION VALUE="GRMN">German - GRMN
+<OPTION VALUE="GBST">Global Studies - CPS Spec - GBST
+<OPTION VALUE="HINF">Health Informatics - HINF
+<OPTION VALUE="HLTH">Health Sci - Interdisciplinary - HLTH
+<OPTION VALUE="HSCI">Health Science - HSCI
+<OPTION VALUE="HBRW">Hebrew - HBRW
+<OPTION VALUE="HIST">History - HIST
+<OPTION VALUE="HSTY">History - CPS Spec - HSTY
+<OPTION VALUE="HONR">Honors Program - HONR
+<OPTION VALUE="HRMG">Human Resources Management - HRMG
+<OPTION VALUE="HUSV">Human Services - HUSV
+<OPTION VALUE="IE">Industrial Engineering - IE
+<OPTION VALUE="IA">Information Assurance - IA
+<OPTION VALUE="IS">Information Science - IS
+<OPTION VALUE="INFO">Information Systems Program - INFO
+<OPTION VALUE="INAM">Interdisc Studies - Arts/Media - INAM
+<OPTION VALUE="INSH">Interdisc Studies - Soc Sc/Hum - INSH
+<OPTION VALUE="INTL">International Affairs - INTL
+<OPTION VALUE="INTB">International Business - INTB
+<OPTION VALUE="INTP">Interpreting - INTP
+<OPTION VALUE="ITLN">Italian - ITLN
+<OPTION VALUE="JPNS">Japanese - JPNS
+<OPTION VALUE="JWSS">Jewish Studies - JWSS
+<OPTION VALUE="JRNL">Journalism - JRNL
+<OPTION VALUE="LARC">Landscape Architecture - LARC
+<OPTION VALUE="LANG">Language - General - LANG
+<OPTION VALUE="LACS">Latin Am & Carib Studies - LACS
+<OPTION VALUE="LPSC">Law and Public Policy - LPSC
+<OPTION VALUE="LING">Linguistics - LING
+<OPTION VALUE="MGMT">Management - MGMT
+<OPTION VALUE="MISM">Management Information Systems - MISM
+<OPTION VALUE="MGSC">Management Science - MGSC
+<OPTION VALUE="MECN">Managerial Economics - MECN
+<OPTION VALUE="MARS">Marine Studies - MARS
+<OPTION VALUE="MKTG">Marketing - MKTG
+<OPTION VALUE="MATL">Materials Engineering - MATL
+<OPTION VALUE="MATH">Mathematics - MATH
+<OPTION VALUE="MATM">Mathematics - CPS Spec - MATM
+<OPTION VALUE="MEIE">Mech & Industrial Engineering - MEIE
+<OPTION VALUE="ME">Mechanical Engineering - ME
+<OPTION VALUE="CINE">Media - Cinema Studies - CINE
+<OPTION VALUE="MSCR">Media and Screen Studies - MSCR
+<OPTION VALUE="MUSC">Music - MUSC
+<OPTION VALUE="MUSI">Music Industry - MUSI
+<OPTION VALUE="MUST">Music Technology - MUST
+<OPTION VALUE="NNMD">Nanomedicine - NNMD
+<OPTION VALUE="NAVY">Navy ROTC - NAVY
+<OPTION VALUE="NETS">Network Science - NETS
+<OPTION VALUE="NRSG">Nursing - NRSG
+<OPTION VALUE="OR">Operations Research - OR
+<OPTION VALUE="ORGB">Organizational Behavior - ORGB
+<OPTION VALUE="PHSC">Pharmaceutical Science - PHSC
+<OPTION VALUE="PMST">Pharmaceutics - PMST
+<OPTION VALUE="PHMD">Pharmacy Practice - PHMD
+<OPTION VALUE="PHIL">Philosophy - PHIL
+<OPTION VALUE="PHLS">Philosophy - CPS Spec - PHLS
+<OPTION VALUE="PT">Physical Therapy - PT
+<OPTION VALUE="PA">Physician Assistant - PA
+<OPTION VALUE="PHYS">Physics - PHYS
+<OPTION VALUE="POLS">Political Science - POLS
+<OPTION VALUE="PORT">Portuguese - PORT
+<OPTION VALUE="PSYC">Psychology - PSYC
+<OPTION VALUE="PPUA">Pub Policy and Urban Affairs - PPUA
+<OPTION VALUE="PHTH">Public Health - PHTH
+<OPTION VALUE="RSSN">Russian - RSSN
+<OPTION VALUE="SMFA">School of Museum of Fine Arts - SMFA
+<OPTION VALUE="SOCL">Sociology - SOCL
+<OPTION VALUE="SPNS">Spanish - SPNS
+<OPTION VALUE="SLPA">Speech-Lang Path & Audiology - SLPA
+<OPTION VALUE="STRT">Strategy - STRT
+<OPTION VALUE="ABRB">Study Abroad - Business - ABRB
+<OPTION VALUE="ABRS">Study Abroad - Science - ABRS
+<OPTION VALUE="SCHM">Supply Chain Management - SCHM
+<OPTION VALUE="SBSY">Sustainable Building Systems - SBSY
+<OPTION VALUE="SUEN">Sustainable Urban Environments - SUEN
+<OPTION VALUE="TELE">Telecommunication Systems - TELE
+<OPTION VALUE="THTR">Theatre - THTR
+<OPTION VALUE="WMNS">Women's/Gender/Sexualty Stdies - WMNS
+</SELECT>
+</TD>
+</TR>
+<TR>
+</TR>
+<TR>
+<TD CLASS="delabel" scope="row" ><LABEL for=crse_id><SPAN class="fieldlabeltext">Course Number: </SPAN></LABEL></TD>
+<TD COLSPAN="7" CLASS="dedefault"><INPUT TYPE="text" NAME="sel_crse" SIZE="11" MAXLENGTH="10" ID="crse_id"></TD>
+</TR>
+<TR>
+</TR>
+<TR>
+<TD CLASS="delabel" scope="row" ><LABEL for=title_id><SPAN class="fieldlabeltext">Title: </SPAN></LABEL></TD>
+<TD COLSPAN="7" CLASS="dedefault"><INPUT TYPE="text" NAME="sel_title" SIZE="33" MAXLENGTH="30" ID="title_id"></TD>
+</TR>
+<TR>
+<TD CLASS="delabel" scope="row" ><LABEL for=attr_id><SPAN class="fieldlabeltext">Attribute Type: </SPAN></LABEL></TD>
+<TD COLSPAN="7" CLASS="dedefault">
+<SELECT NAME="sel_attr" SIZE="3" MULTIPLE ID="attr_id">
+<OPTION VALUE="%" SELECTED>All
+<OPTION VALUE="NCR1"> NU Core Arts Lvl 1
+<OPTION VALUE="NCA1"> NU Core Arts/Humanities Lvl 1
+<OPTION VALUE="NCC1"> NU Core Capstone
+<OPTION VALUE="NCD1"> NU Core Comp Stdy of Cultures
+<OPTION VALUE="NCE1"> NU Core Experiential Learning
+<OPTION VALUE="NCH1"> NU Core Humanities Lvl 1
+<OPTION VALUE="NCM1"> NU Core Math/Anly Think Lvl 1
+<OPTION VALUE="NCM2"> NU Core Math/Anly Think Lvl 2
+<OPTION VALUE="NCT1"> NU Core Science/Tech Lvl 1
+<OPTION VALUE="NCS1"> NU Core Social Science Lvl 1
+<OPTION VALUE="NCW2"> NU Core Writing Intsv in Majr
+<OPTION VALUE="NCW1"> NU Core/NUpath 1st Yr Writing
+<OPTION VALUE="NCW3"> NU Core/NUpath Adv Writ Dscpl
+<OPTION VALUE="NCAD"> NUpath Analyzing/Using Data
+<OPTION VALUE="NCCE"> NUpath Capstone Experience
+<OPTION VALUE="NCEI"> NUpath Creative Express/Innov
+<OPTION VALUE="NCDD"> NUpath Difference/Diversity
+<OPTION VALUE="NCER"> NUpath Ethical Reasoning
+<OPTION VALUE="NCFQ"> NUpath Formal/Quant Reasoning
+<OPTION VALUE="NCEX"> NUpath Integration Experience
+<OPTION VALUE="NCIC"> NUpath Interpreting Culture
+<OPTION VALUE="NCND"> NUpath Natural/Designed World
+<OPTION VALUE="NCSI"> NUpath Societies/Institutions
+<OPTION VALUE="NCWI"> NUpath Writing Intensive
+<OPTION VALUE="PSDV">CPS Diversity Core
+<OPTION VALUE="PSEP">CPS Ethical&Pol Prspctv Core
+<OPTION VALUE="PSHS">CPS Historical Prspctv Core
+<OPTION VALUE="PSIL">CPS Information Literacy Core
+<OPTION VALUE="PSMT">CPS Mathematics Core
+<OPTION VALUE="PSSP">CPS Science Prspctv Core
+<OPTION VALUE="PSWC">CPS Written Comm Core
+<OPTION VALUE="MCHL">Charlotte, NC program eligible
+<OPTION VALUE="UBFL">Faculty Led Study Abroad
+<OPTION VALUE="GNFT">Full-time status
+<OPTION VALUE="GNHN">Honors
+<OPTION VALUE="GN3S">Three Seas Program
+<OPTION VALUE="GNSL">With Service Learning
+</SELECT>
+</TD>
+</TR>
+<TR>
+</TR>
+<TR>
+</TR>
+<TR>
+<TD CLASS="delabel" scope="row" ><LABEL for=levl_id><SPAN class="fieldlabeltext">Course Level: </SPAN></LABEL></TD>
+<TD COLSPAN="7" CLASS="dedefault">
+<SELECT NAME="sel_levl" SIZE="8" MULTIPLE ID="levl_id">
+<OPTION VALUE="%" SELECTED>All
+<OPTION VALUE="GP">CPS - Graduate
+<OPTION VALUE="UP">CPS - Undergraduate Quarter
+<OPTION VALUE="UC">CPS - Undergraduate Semester
+<OPTION VALUE="CP">Continuing Education
+<OPTION VALUE="GR">Graduate
+<OPTION VALUE="LW">Law
+<OPTION VALUE="UG">Undergraduate
+</SELECT>
+</TD>
+</TR>
+<TR>
+<TD CLASS="delabel" scope="row" >&nbsp;</TD>
+<TD COLSPAN="7" CLASS="dedefault">
+<INPUT TYPE="checkbox" NAME="sel_seat" VALUE="Y" ID="sel_seat_id">
+<LABEL for=sel_seat_id><SPAN class="fieldlabeltextinvisible">Show only courses with seats available</SPAN></LABEL>
+<ABBR title = Show only courses with seats available>Show only courses with seats available</ABBR>
+</TD>
+</TR>
+</TABLE>
+<script language="JavaScript" type="text/javascript">
+function showOption(h) {
+  var tbl = document.getElementById('opttbl')
+  tbl.style.display = h;
+}
+function show_hide(divid, show) { 
+if (tbl = document.getElementById(divid)) {
+if (null == show) show = tbl.style.display == 'none';
+tbl.style.display = (show ? '' : 'none');}}
+</script> 
+<br>
+<a href="javascript:;" onclick="show_hide('OptTable')"><font size="2">+/- More Options</font></a>
+<div id="OptTable"  style="overflow:hidden;display:none">
+<TABLE  CLASS="dataentrytable" SUMMARY="Table is used to present the additional course search criteria">
+<TR>
+<TD CLASS="delabel" scope="row" ><LABEL for=schd_id><SPAN class="fieldlabeltext">Schedule Type: </SPAN></LABEL></TD>
+<TD COLSPAN="7" CLASS="dedefault">
+<SELECT NAME="sel_schd" SIZE="8" MULTIPLE ID="schd_id">
+<OPTION VALUE="%" SELECTED>All
+<OPTION VALUE="II">Individual Instruction
+<OPTION VALUE="LAB">Lab
+<OPTION VALUE="LEC">Lecture
+<OPTION VALUE="XC">Off-campus instruction
+<OPTION VALUE="XCL">Off-campus instruction w/ lec
+<OPTION VALUE="REC">Recitation/Discussion
+<OPTION VALUE="SEM">Seminar
+<OPTION VALUE="STU">Studio
+</SELECT>
+</TD>
+</TR>
+<TR>
+<TD CLASS="delabel" scope="row" ><LABEL for=insm_id><SPAN class="fieldlabeltext">Instructional Method: </SPAN></LABEL></TD>
+<TD COLSPAN="7" CLASS="dedefault">
+<SELECT NAME="sel_insm" SIZE="8" MULTIPLE ID="insm_id">
+<OPTION VALUE="%" SELECTED>All
+<OPTION VALUE="BL">Blended
+<OPTION VALUE="CO">Cooperative Education
+<OPTION VALUE="HY">Hybrid
+<OPTION VALUE="SAFL">NU Faculty-led Study Abroad
+<OPTION VALUE="OL">Online
+<OPTION VALUE="SA">Study Abroad
+<OPTION VALUE="VS">Video Streaming
+</SELECT>
+</TD>
+</TR>
+<TR>
+<TD CLASS="delabel" scope="row" ><LABEL for=credit_id_from><SPAN class="fieldlabeltext">Credit Range: </SPAN></LABEL></TD>
+<TD COLSPAN="7" CLASS="dedefault">
+<INPUT TYPE="text" NAME="sel_from_cred" SIZE="11" MAXLENGTH="10" ID="credit_id_from">
+ hours to  
+<LABEL for=credit_id_to><SPAN class="fieldlabeltextinvisible">Credit Range To:</SPAN></LABEL>
+<INPUT TYPE="text" NAME="sel_to_cred" SIZE="11" MAXLENGTH="10" ID="credit_id_to">
+ hours
+</TD>
+</TR>
+<TR>
+<TD CLASS="delabel" scope="row" ><LABEL for=camp_id><SPAN class="fieldlabeltext">Campus: </SPAN></LABEL></TD>
+<TD COLSPAN="7" CLASS="dedefault">
+<SELECT NAME="sel_camp" SIZE="7" MULTIPLE ID="camp_id">
+<OPTION VALUE="%" SELECTED>All
+<OPTION VALUE="BOS">Boston
+<OPTION VALUE="BRD">Boston
+<OPTION VALUE="BRL">Burlington
+<OPTION VALUE="CHL">Charlotte, NC
+<OPTION VALUE="DDH">Dedham
+<OPTION VALUE="NAH">Nahant
+<OPTION VALUE="SEA">Seattle, WA
+<OPTION VALUE="VTL">Online
+</SELECT>
+</TD>
+</TR>
+<TR>
+<TD CLASS="delabel" scope="row" ><LABEL for=ptrm_id><SPAN class="fieldlabeltext">Part of Term: </SPAN></LABEL><BR>     <SPAN class="fieldsmalltext">Non-date based courses only</SPAN></TD>
+<TD COLSPAN="7" CLASS="dedefault">
+<SELECT NAME="sel_ptrm" SIZE="5" MULTIPLE ID="ptrm_id">
+<OPTION VALUE="%" SELECTED>All
+<OPTION VALUE="A">First Half
+<OPTION VALUE="1">Full Term
+<OPTION VALUE="2">Full Term Grad
+<OPTION VALUE="B">Second Half
+</SELECT>
+</TD>
+</TR>
+<TR>
+<TD CLASS="delabel" scope="row" ><LABEL for=instr_id><SPAN class="fieldlabeltext">Instructor: </SPAN></LABEL></TD>
+<TD COLSPAN="7" CLASS="dedefault">
+<SELECT NAME="sel_instr" SIZE="8" MULTIPLE ID="instr_id">
+<OPTION VALUE="%" SELECTED>All
+<OPTION VALUE="348908">Abderrazzaq, Mohammad A.
+<OPTION VALUE="350239">Abedi, Mehdi
+<OPTION VALUE="350239">Abedi, Mehdi
+<OPTION VALUE="350239">Abedi, Mehdi
+<OPTION VALUE="841322">Abels, Margot E.
+<OPTION VALUE="1254564">Abernethy, Graeme
+<OPTION VALUE="1254564">Abernethy, Graeme
+<OPTION VALUE="1254564">Abernethy, Graeme
+<OPTION VALUE="1254564">Abernethy, Graeme
+<OPTION VALUE="1254564">Abernethy, Graeme
+<OPTION VALUE="1254564">Abernethy, Graeme
+<OPTION VALUE="1254564">Abernethy, Graeme
+<OPTION VALUE="1356903">Abou Ibrahim, Amin G.
+<OPTION VALUE="1356903">Abou Ibrahim, Amin G.
+<OPTION VALUE="1356903">Abou Ibrahim, Amin G.
+<OPTION VALUE="1356903">Abou Ibrahim, Amin G.
+<OPTION VALUE="349489">Abourjaily, Paul N.
+<OPTION VALUE="1214220">Abrahms, Max
+<OPTION VALUE="1214220">Abrahms, Max
+<OPTION VALUE="1214220">Abrahms, Max
+<OPTION VALUE="30072">Abur, Ali
+<OPTION VALUE="30072">Abur, Ali
+<OPTION VALUE="30072">Abur, Ali
+<OPTION VALUE="30072">Abur, Ali
+<OPTION VALUE="30072">Abur, Ali
+<OPTION VALUE="30072">Abur, Ali
+<OPTION VALUE="30072">Abur, Ali
+<OPTION VALUE="30072">Abur, Ali
+<OPTION VALUE="30072">Abur, Ali
+<OPTION VALUE="30072">Abur, Ali
+<OPTION VALUE="30072">Abur, Ali
+<OPTION VALUE="884500">Adams, Daniel
+<OPTION VALUE="884500">Adams, Daniel
+<OPTION VALUE="30924">Adams, George G.
+<OPTION VALUE="30924">Adams, George G.
+<OPTION VALUE="30924">Adams, George G.
+<OPTION VALUE="30924">Adams, George G.
+<OPTION VALUE="30924">Adams, George G.
+<OPTION VALUE="30924">Adams, George G.
+<OPTION VALUE="30924">Adams, George G.
+<OPTION VALUE="30924">Adams, George G.
+<OPTION VALUE="30924">Adams, George G.
+<OPTION VALUE="30924">Adams, George G.
+<OPTION VALUE="30924">Adams, George G.
+<OPTION VALUE="30924">Adams, George G.
+<OPTION VALUE="30924">Adams, George G.
+<OPTION VALUE="1370477">Adhikari, Nilam
+<OPTION VALUE="1370477">Adhikari, Nilam
+<OPTION VALUE="1370477">Adhikari, Nilam
+<OPTION VALUE="1370477">Adhikari, Nilam
+<OPTION VALUE="1413439">Adrianson, Aubrey
+<OPTION VALUE="1413439">Adrianson, Aubrey
+<OPTION VALUE="1413439">Adrianson, Aubrey
+<OPTION VALUE="1413439">Adrianson, Aubrey
+<OPTION VALUE="1309462">Aguilera, Ruth
+<OPTION VALUE="1309462">Aguilera, Ruth
+<OPTION VALUE="50753">Ahern Jr, Francis D.
+<OPTION VALUE="1031188">Ahmed, Amal
+<OPTION VALUE="1031188">Ahmed, Amal
+<OPTION VALUE="933718">Ahmed, Rabah
+<OPTION VALUE="32557">Ainslie, Sophia
+<OPTION VALUE="32557">Ainslie, Sophia
+<OPTION VALUE="32557">Ainslie, Sophia
+<OPTION VALUE="1253818">Ajayi, Murphy
+<OPTION VALUE="1253818">Ajayi, Murphy
+<OPTION VALUE="273977">Akula, James D.
+<OPTION VALUE="1406952">Alam, Md Noor E
+<OPTION VALUE="31680">Alam, Mohammad S.
+<OPTION VALUE="31680">Alam, Mohammad S.
+<OPTION VALUE="1317196">Albano, Sondra
+<OPTION VALUE="1317196">Albano, Sondra
+<OPTION VALUE="1226848">Albrecht, Brian S.
+<OPTION VALUE="1226848">Albrecht, Brian S.
+<OPTION VALUE="1226848">Albrecht, Brian S.
+<OPTION VALUE="1226848">Albrecht, Brian S.
+<OPTION VALUE="1132293">Albright, Len
+<OPTION VALUE="1132293">Albright, Len
+<OPTION VALUE="1404943">Aldrich, Daniel
+<OPTION VALUE="349090">Alessandri, Todd
+<OPTION VALUE="349090">Alessandri, Todd
+<OPTION VALUE="333329">Aljoe, Nicole N.
+<OPTION VALUE="333329">Aljoe, Nicole N.
+<OPTION VALUE="333329">Aljoe, Nicole N.
+<OPTION VALUE="333329">Aljoe, Nicole N.
+<OPTION VALUE="1413958">Allen, Kristina M.
+<OPTION VALUE="1413958">Allen, Kristina M.
+<OPTION VALUE="1402177">Alper, Meryl J.
+<OPTION VALUE="1402177">Alper, Meryl J.
+<OPTION VALUE="32031">Alper, Neil O.
+<OPTION VALUE="32031">Alper, Neil O.
+<OPTION VALUE="30037">Alshawabkeh, Akram N.
+<OPTION VALUE="30037">Alshawabkeh, Akram N.
+<OPTION VALUE="30037">Alshawabkeh, Akram N.
+<OPTION VALUE="30037">Alshawabkeh, Akram N.
+<OPTION VALUE="30037">Alshawabkeh, Akram N.
+<OPTION VALUE="30037">Alshawabkeh, Akram N.
+<OPTION VALUE="1253816">Altaf, Kashif
+<OPTION VALUE="1253816">Altaf, Kashif
+<OPTION VALUE="1253816">Altaf, Kashif
+<OPTION VALUE="1384146">Altavilla, Stephanie
+<OPTION VALUE="1509378">Altschuler, Sari B.
+<OPTION VALUE="349388">Altunkaynak, Ismet B.
+<OPTION VALUE="349388">Altunkaynak, Ismet B.
+<OPTION VALUE="349388">Altunkaynak, Ismet B.
+<OPTION VALUE="349388">Altunkaynak, Ismet B.
+<OPTION VALUE="349388">Altunkaynak, Ismet B.
+<OPTION VALUE="349388">Altunkaynak, Ismet B.
+<OPTION VALUE="349388">Altunkaynak, Ismet B.
+<OPTION VALUE="349388">Altunkaynak, Ismet B.
+<OPTION VALUE="349388">Altunkaynak, Ismet B.
+<OPTION VALUE="349388">Altunkaynak, Ismet B.
+<OPTION VALUE="349388">Altunkaynak, Ismet B.
+<OPTION VALUE="349388">Altunkaynak, Ismet B.
+<OPTION VALUE="32609">Alves, Steve L.
+<OPTION VALUE="32609">Alves, Steve L.
+<OPTION VALUE="32609">Alves, Steve L.
+<OPTION VALUE="32609">Alves, Steve L.
+<OPTION VALUE="32609">Alves, Steve L.
+<OPTION VALUE="32609">Alves, Steve L.
+<OPTION VALUE="32609">Alves, Steve L.
+<OPTION VALUE="32609">Alves, Steve L.
+<OPTION VALUE="32609">Alves, Steve L.
+<OPTION VALUE="32609">Alves, Steve L.
+<OPTION VALUE="32609">Alves, Steve L.
+<OPTION VALUE="1500132">Amato, Christopher J.
+<OPTION VALUE="1395423">Ambulkar, Saurabh
+<OPTION VALUE="1395423">Ambulkar, Saurabh
+<OPTION VALUE="1032766">Amidon, Jane P.
+<OPTION VALUE="31695">Amiji, Mansoor
+<OPTION VALUE="31695">Amiji, Mansoor
+<OPTION VALUE="31695">Amiji, Mansoor
+<OPTION VALUE="1405554">Amirabadi, Mahshid
+<OPTION VALUE="1405554">Amirabadi, Mahshid
+<OPTION VALUE="1405554">Amirabadi, Mahshid
+<OPTION VALUE="1405554">Amirabadi, Mahshid
+<OPTION VALUE="1405554">Amirabadi, Mahshid
+<OPTION VALUE="291614">Amorin, Kevin
+<OPTION VALUE="291614">Amorin, Kevin
+<OPTION VALUE="1318265">Amor-Tijani, Ghita
+<OPTION VALUE="1318265">Amor-Tijani, Ghita
+<OPTION VALUE="1318265">Amor-Tijani, Ghita
+<OPTION VALUE="1318265">Amor-Tijani, Ghita
+<OPTION VALUE="1318265">Amor-Tijani, Ghita
+<OPTION VALUE="1318265">Amor-Tijani, Ghita
+<OPTION VALUE="1318265">Amor-Tijani, Ghita
+<OPTION VALUE="1318265">Amor-Tijani, Ghita
+<OPTION VALUE="1318265">Amor-Tijani, Ghita
+<OPTION VALUE="36569">An, Won-Hee
+<OPTION VALUE="36569">An, Won-Hee
+<OPTION VALUE="36569">An, Won-Hee
+<OPTION VALUE="36569">An, Won-Hee
+<OPTION VALUE="36569">An, Won-Hee
+<OPTION VALUE="36569">An, Won-Hee
+<OPTION VALUE="36569">An, Won-Hee
+<OPTION VALUE="36569">An, Won-Hee
+<OPTION VALUE="168225">Andersen, Richard C.
+<OPTION VALUE="500152">Anderson, Daun R.
+<OPTION VALUE="500152">Anderson, Daun R.
+<OPTION VALUE="31070">Anderson, James S.
+<OPTION VALUE="31070">Anderson, James S.
+<OPTION VALUE="31070">Anderson, James S.
+<OPTION VALUE="950876">Anderson, Mindelyn R.
+<OPTION VALUE="950876">Anderson, Mindelyn R.
+<OPTION VALUE="32709">Ando, Teiichi
+<OPTION VALUE="32709">Ando, Teiichi
+<OPTION VALUE="32709">Ando, Teiichi
+<OPTION VALUE="32709">Ando, Teiichi
+<OPTION VALUE="32709">Ando, Teiichi
+<OPTION VALUE="32709">Ando, Teiichi
+<OPTION VALUE="586674">Andreano, Joseph M.
+<OPTION VALUE="586674">Andreano, Joseph M.
+<OPTION VALUE="37424">Andree, Jason T.
+<OPTION VALUE="37424">Andree, Jason T.
+<OPTION VALUE="953492">Andrew, Jonathan D.
+<OPTION VALUE="953492">Andrew, Jonathan D.
+<OPTION VALUE="953492">Andrew, Jonathan D.
+<OPTION VALUE="953492">Andrew, Jonathan D.
+<OPTION VALUE="30754">Andrews, Edwin C.
+<OPTION VALUE="1163606">Andrianova, Maria G.
+<OPTION VALUE="1163606">Andrianova, Maria G.
+<OPTION VALUE="1321509">Annabi, Nasim
+<OPTION VALUE="1321509">Annabi, Nasim
+<OPTION VALUE="1321509">Annabi, Nasim
+<OPTION VALUE="1321509">Annabi, Nasim
+<OPTION VALUE="1321509">Annabi, Nasim
+<OPTION VALUE="1321509">Annabi, Nasim
+<OPTION VALUE="1123644">Annunziato, Jose G.
+<OPTION VALUE="1123644">Annunziato, Jose G.
+<OPTION VALUE="1123644">Annunziato, Jose G.
+<OPTION VALUE="1209085">Aparicio, Ernesto A.
+<OPTION VALUE="1209085">Aparicio, Ernesto A.
+<OPTION VALUE="891773">Zupanc, Gunther K.
+</SELECT>
+</TD>
+</TR>
+<TR>
+<TD CLASS="delabel" scope="row" >Start Time: </TD>
+<TD COLSPAN="2" CLASS="dedefault">
+<LABEL for=begin_hh_id><SPAN class="fieldlabeltextinvisible">Hour</SPAN></LABEL>
+Hour <SELECT NAME="begin_hh" SIZE="1" ID="begin_hh_id">
+<OPTION VALUE="0"> 00
+<OPTION VALUE="1"> 01
+<OPTION VALUE="2"> 02
+<OPTION VALUE="3"> 03
+<OPTION VALUE="4"> 04
+<OPTION VALUE="5"> 05
+<OPTION VALUE="6"> 06
+<OPTION VALUE="7"> 07
+<OPTION VALUE="8"> 08
+<OPTION VALUE="9"> 09
+<OPTION VALUE="10"> 10
+<OPTION VALUE="11"> 11
+<OPTION VALUE="12"> 12
+</SELECT>
+</TD>
+<TD COLSPAN="2" CLASS="dedefault">
+<LABEL for=begin_mi_id><SPAN class="fieldlabeltextinvisible">Minute</SPAN></LABEL>
+Minute <SELECT NAME="begin_mi" SIZE="1" ID="begin_mi_id">
+<OPTION VALUE="0"> 00
+<OPTION VALUE="5"> 05
+<OPTION VALUE="10"> 10
+<OPTION VALUE="15"> 15
+<OPTION VALUE="20"> 20
+<OPTION VALUE="25"> 25
+<OPTION VALUE="30"> 30
+<OPTION VALUE="35"> 35
+<OPTION VALUE="40"> 40
+<OPTION VALUE="45"> 45
+<OPTION VALUE="50"> 50
+<OPTION VALUE="55"> 55
+</SELECT>
+</TD>
+<TD COLSPAN="3" CLASS="dedefault">
+<LABEL for=begin_ap_id><SPAN class="fieldlabeltextinvisible">am/pm</SPAN></LABEL>
+am/pm <SELECT NAME="begin_ap" SIZE="1" ID="begin_ap_id">
+<OPTION VALUE="a">am
+<OPTION VALUE="p">pm
+</SELECT>
+</TD>
+</TR>
+<TR>
+<TD CLASS="delabel" scope="row" >End Time: </TD>
+<TD COLSPAN="2" CLASS="dedefault">
+<LABEL for=end_hh_id><SPAN class="fieldlabeltextinvisible">Hour</SPAN></LABEL>
+Hour <SELECT NAME="end_hh" SIZE="1" ID="end_hh_id">
+<OPTION VALUE="0"> 00
+<OPTION VALUE="1"> 01
+<OPTION VALUE="2"> 02
+<OPTION VALUE="3"> 03
+<OPTION VALUE="4"> 04
+<OPTION VALUE="5"> 05
+<OPTION VALUE="6"> 06
+<OPTION VALUE="7"> 07
+<OPTION VALUE="8"> 08
+<OPTION VALUE="9"> 09
+<OPTION VALUE="10"> 10
+<OPTION VALUE="11"> 11
+<OPTION VALUE="12"> 12
+</SELECT>
+</TD>
+<TD COLSPAN="2" CLASS="dedefault">
+<LABEL for=end_mi_id><SPAN class="fieldlabeltextinvisible">Minute</SPAN></LABEL>
+Minute <SELECT NAME="end_mi" SIZE="1" ID="end_mi_id">
+<OPTION VALUE="0"> 00
+<OPTION VALUE="5"> 05
+<OPTION VALUE="10"> 10
+<OPTION VALUE="15"> 15
+<OPTION VALUE="20"> 20
+<OPTION VALUE="25"> 25
+<OPTION VALUE="30"> 30
+<OPTION VALUE="35"> 35
+<OPTION VALUE="40"> 40
+<OPTION VALUE="45"> 45
+<OPTION VALUE="50"> 50
+<OPTION VALUE="55"> 55
+</SELECT>
+</TD>
+<TD COLSPAN="3" CLASS="dedefault">
+<LABEL for=end_ap_id><SPAN class="fieldlabeltextinvisible">am/pm</SPAN></LABEL>
+am/pm <SELECT NAME="end_ap" SIZE="1" ID="end_ap_id">
+<OPTION VALUE="a">am
+<OPTION VALUE="p">pm
+</SELECT>
+</TD>
+</TR>
+<TR>
+<TD CLASS="delabel" scope="row" >Days: </TD>
+<TD WIDTH=11% CLASS="dedefault">
+<INPUT TYPE="checkbox" NAME="sel_day" VALUE="m" ID="sel_day_mon_id">
+<LABEL for=sel_day_mon_id><SPAN class="fieldlabeltextinvisible">Monday</SPAN></LABEL>
+<ABBR title = Monday>Mon</ABBR>
+</TD>
+<TD WIDTH=11% CLASS="dedefault">
+<INPUT TYPE="checkbox" NAME="sel_day" VALUE="t" ID="sel_day_tue_id">
+<LABEL for=sel_day_tue_id><SPAN class="fieldlabeltextinvisible">Tuesday</SPAN></LABEL>
+<ABBR title = Tuesday>Tue</ABBR>
+</TD>
+<TD WIDTH=11% CLASS="dedefault">
+<INPUT TYPE="checkbox" NAME="sel_day" VALUE="w" ID="sel_day_wed_id">
+<LABEL for=sel_day_wed_id><SPAN class="fieldlabeltextinvisible">Wednesday</SPAN></LABEL>
+<ABBR title = Wednesday>Wed</ABBR>
+</TD>
+<TD WIDTH=11% CLASS="dedefault">
+<INPUT TYPE="checkbox" NAME="sel_day" VALUE="r" ID="sel_day_thur_id">
+<LABEL for=sel_day_thur_id><SPAN class="fieldlabeltextinvisible">Thursday</SPAN></LABEL>
+<ABBR title = Thursday>Thur</ABBR>
+</TD>
+<TD WIDTH=11% CLASS="dedefault">
+<INPUT TYPE="checkbox" NAME="sel_day" VALUE="f" ID="sel_day_fri_id">
+<LABEL for=sel_day_fri_id><SPAN class="fieldlabeltextinvisible">Friday</SPAN></LABEL>
+<ABBR title = Friday>Fri</ABBR>
+</TD>
+<TD WIDTH=11% CLASS="dedefault">
+<INPUT TYPE="checkbox" NAME="sel_day" VALUE="s" ID="sel_day_sat_id">
+<LABEL for=sel_day_sat_id><SPAN class="fieldlabeltextinvisible">Saturday</SPAN></LABEL>
+<ABBR title = Saturday>Sat</ABBR>
+</TD>
+<TD WIDTH=11% CLASS="dedefault">
+<INPUT TYPE="checkbox" NAME="sel_day" VALUE="u" ID="sel_day_sun_id">
+<LABEL for=sel_day_sun_id><SPAN class="fieldlabeltextinvisible">Sunday</SPAN></LABEL>
+<ABBR title = Sunday>Sun</ABBR>
+</TD>
+</TR>
+</TABLE>
+</div>
+<br>
+<br>
+<BR>
+<INPUT TYPE="submit" VALUE="Submit">
+<INPUT TYPE="reset" VALUE="Reset">
+</FORM>
+
+<!--  ** START OF twbkwbis.P_CloseDoc **  -->
+<TABLE  CLASS="plaintable" SUMMARY="This is table displays line separator at end of the page."
+                                             WIDTH="100%" cellSpacing=0 cellPadding=0 border=0><TR><TD class="bgtabon" width="100%" colSpan=2><IMG SRC="/wtlgifs/web_transparent.gif" ALT="Transparent Image" CLASS="headerImg" TITLE="Transparent Image"  NAME="web_transparent" HSPACE=0 VSPACE=0 BORDER=0 HEIGHT=3 WIDTH=10></TD></TR></TABLE>
+<A HREF="#top" onMouseover="window.status='Skip to top of page'; return true" onMouseout="window.status=''; return true" OnFocus="window.status='Skip to top of page'; return true" onBlur="window.status=''; return true" class="skiplinks">Skip to top of page</A>
+</DIV>
+<DIV class="footerbeforediv">
+
+</DIV>
+<DIV class="footerafterdiv">
+
+</DIV>
+<DIV class="globalafterdiv">
+
+</DIV>
+<DIV class="globalfooterdiv">
+
+</DIV>
+<DIV class="pagefooterdiv">
+<SPAN class="releasetext">Release: 1.1</SPAN>
+</DIV>
+<DIV class="poweredbydiv">
+</DIV>
+<DIV class="div1"></DIV>
+<DIV class="div2"></DIV>
+<DIV class="div3"></DIV>
+<DIV class="div4"></DIV>
+<DIV class="div5"></DIV>
+<DIV class="div6"></DIV>
+<div class="banner_copyright"> <br><h5>© 2016 Ellucian Company L.P. and its affiliates.<br></h5></div>
+</BODY>
+</HTML>

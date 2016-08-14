@@ -1,0 +1,38 @@
+All attributes fitting search parameters
+---
+tags:
+  - search
+parameters:
+  - name: search
+    in: query
+    type: string
+    description: Search query
+  - name: term
+    in: query
+    type: integer
+    description: Term id restriction for query e.g. 201710 -> Fall 2016 Semester
+  - name: department
+    in: query
+    type: string
+    description: Department id restriction for query e.g. CS -> Computer Science
+  - name: professor
+    in: query
+    type: string
+    description: professor name restriction for query e.g. Dana H. Brooks
+  - name: attribute
+    in: query
+    type: string
+    description: Attribute restriction for query e.g. NUpath Analyzing and Using Data
+  - name: level
+    in: query
+    type: string
+    description: Level restriction for query e.g. Undergradute or Graduate
+responses:
+  200:
+    description: Returns list of attributes
+    schema:
+      properties:
+        all_scores:
+          type: string
+          description: Attribute
+          default: NUpath Analyzing and Using Data

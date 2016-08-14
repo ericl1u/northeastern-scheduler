@@ -1,0 +1,28 @@
+One professor
+---
+tags:
+  - professors
+parameters:
+  - name: professor_name
+    in: path
+    type: string
+    description: Name of professor
+    required: true
+    default: Dana H. Brooks
+responses:
+  200:
+    description: Returns single professor
+    schema:
+      properties:
+        all_scores:
+          type: json
+          description: All professor scores mapped from question id to score. Question mapping can be found at /question_map
+          default: {19: {score: 1326, total_score: 4.510204081632653, multiplier: 2, count: 294}, 27: {score: 1404, total_score: 4.695652173913044, multiplier: 6, count: 299}, 14: {score: 1414, total_score: 4.74496644295302, multiplier: 3, count: 298}, 23: {score: 1401, total_score: 4.701342281879195, multiplier: 1, count: 298}, 21: {score: 1284, total_score: 4.505263157894737, multiplier: 3, count: 285}, 18: {score: 1384, total_score: 4.691525423728813, multiplier: 2, count: 295}, 25: {score: 1310, total_score: 4.517241379310345, multiplier: 2, count: 290}, 26: {score: 1413, total_score: 4.757575757575758, multiplier: 3, count: 297}, 24: {score: 1300, total_score: 4.545454545454546, multiplier: 2, count: 286}, 15: {score: 1391, total_score: 4.683501683501683, multiplier: 2, count: 297}, 16: {score: 1370, total_score: 4.581939799331104, multiplier: 1, count: 299}, 22: {score: 1366, total_score: 4.614864864864865, multiplier: 6, count: 296}, 20: {score: 1251, total_score: 4.298969072164948, multiplier: 1, count: 291}}
+        general_score:
+          type: integer
+          description: Overall score
+          default: 914
+        professor_name:
+          type: string
+          description: Professor's full name
+          default: Dana H. Brooks

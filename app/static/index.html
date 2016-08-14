@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>  
+  <head>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+    <link rel="stylesheet" href="static/select2.css">
+    <link rel="stylesheet" href="static/select2-bootstrap.css">
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+
+    <script src="static/bootstrap.min.js"></script>
+    <script src="static/anchor.min.js"></script>
+    <script src="static/select2.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+    <script src="static/select2.min.js"></script>
+  </head>
+
+  <div class="grid">
+    <div class="row">
+      <div class="col-xs-1">
+      </div>
+      <div class="col-xs-3">
+        <select id = "term" class="form-control top-buffer">
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-1">
+      </div>
+      <div class="col-xs-4">
+        <form role="form" action="/" method="POST">
+          <input type="text" class="form-control top-buffer" name="general" id="search" placeholder="Search" >
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-1">
+      </div>
+
+      <div class="pic-container">
+        <div id="savedDepartment"></div>
+        <div id="savedLevel"></div>
+        <div id="savedProfessor"></div>
+        <div id="savedAttribute"></div>
+
+        <div id="course-description"></div>
+        <div id="course-sections"></div>
+        <div id="course-terms"></div>
+        <div id="course-top"></div>
+        <div id="department"></div>
+        <div id="level"></div>
+        <div id="professor"></div>
+        <div id="attribute"></div>
+        <div id="course"></div>
+      </div>
+    </div>
+  </div>
+
+<script src="static/script.js"> </script>
+
+</body>
+</html>

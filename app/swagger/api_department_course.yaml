@@ -1,0 +1,82 @@
+One course of a given department
+---
+tags:
+  - courses
+parameters:
+  - name: department_id
+    in: path
+    type: string
+    description: Department id
+    required: true
+    default: EECE
+  - name: course_number
+    in: path
+    type: integer
+    description: Course number
+    required: true
+    default: 2151
+responses:
+  200:
+    description: Returns list of all courses of a given department
+    schema:
+      properties:
+        attributes:
+          type: array[string]
+          description: Array of attributes of the course
+          default: [Engineering, NUpath Analyzing and Using Data]
+        concurrent_prerequisites:
+          type: boolean
+          description: Boolean that describes whether some of the prerequities can be taken concurrently. If so, should look at full prerequisite description
+          default: True
+        corequisites:
+          type:  array[string]
+          description: Array of all corequisite courses that must be taken with this course
+          default: [EECE 2161]
+        course_description:
+          type: string
+          description: Full course description
+          default: Constitutes the lab portion of an integrated lecture/lab. Offers students an opportunity to explore circuits and signals in the lab and to use their knowledge of circuits, analog signals, digital signals, and biological signals to build a working analog/digital EKG system.
+        course_name:
+          type: string
+          description: Course name
+          default: Lab for EECE 2150
+        course_number:
+          type: intger
+          description: Course number
+          default: 2151
+        course_url:
+          type: boolean
+          description: MyNEU url course reference
+          default: https://wl11gp.neu.edu/udcprod8/bwckctlg.p_disp_course_detail?cat_term_in=201710&subj_code_in=EECE&crse_numb_in=2151
+        credit_hours:
+          type: array[integer]
+          description: Number of credit hours for course
+          default: [1]
+        department_id:
+          type: string
+          description: Department id of course
+          default: EECE
+        concurrent_prerequisites:
+          type: boolean
+          description: Boolean that describes whether some of the prerequities can be taken concurrently. If so, should look at full prerequisite description
+          default: True
+        full_prerequisite_description:
+          type: boolean
+          description: Full description of prerequisite requirements
+          default: Prereq. GE 1111, MATH 2341, and PHYS 1155 (the latter two may be taken concurrently); engineering students only. Coreq. EECE 2150.
+        is_graduate:
+          type: boolean
+          description: Boolean that describes whether the course is a graduate level course
+          default: False
+        is_undergraduate:
+          type: boolean
+          description: Boolean that describes whether the course is a undergraduate level course
+          default: True
+        prerequisites:
+          type: array[string]
+          description: Array of strings representing prerequisites. Uses keywords and, or and symbols ( and ) to represent order
+          default: [GE 1111, and, MATH 2341, and, PHYS 1155]
+        restrictions:
+          type: json
+          description: All restrictions for course
+          default: {Levels: [Undergraduate], Colleges: [College of Engineering]}

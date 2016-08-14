@@ -1,0 +1,106 @@
+One section of a given crn, course, department, and term
+---
+tags:
+  - sections
+parameters:
+  - name: term_id
+    in: path
+    type: int
+    description: Term id
+    required: true
+    default: 201710
+  - name: department_id
+    in: path
+    type: string
+    description: Department id
+    required: true
+    default: EECE
+  - name: course_number
+    in: path
+    type: integer
+    description: Course number
+    required: true
+    default: 2151
+  - name: crn
+    in: path
+    type: integer
+    description: CRN
+    required: true
+    default: 15042
+responses:
+  200:
+    description: Returns list of all courses of a given department
+    schema:
+      properties:
+        capacity:
+          type: integer
+          description: Total capacity of the section
+          default: 32
+        course_name:
+          type: string
+          description: Name of course for section
+          default: Lab for EECE 2150
+        course_number:
+          type:  integer
+          description: Course number 
+          default: 2151
+        credit_hours:
+          type: array[integer]
+          description: Credit hours of the section
+          default: [1]
+        crn:
+          type: integer
+          description: Section crn
+          default: 15042
+        department_id:
+          type: string
+          description: Department id
+          default: EECE
+        location:
+          type: boolean
+          description: Location of section
+          default: Hayden Hall 009
+        credit_hours:
+          type: array[integer]
+          description: Number of credit hours for course
+          default: [1]
+        professor_name:
+          type: string
+          description: Professor name teaching the section
+          default: Nicol Mcgruer
+        room_size:
+          type: integer
+          description: Total capacity for the room
+          default: 50
+        seats_left:
+          type: integer
+          description: Seats left in the section
+          default: 15
+        seats_taken:
+          type: integer
+          description: Seats taken in the section
+          default: 17
+        secondary_professor_names:
+          type: array[string]
+          description: Any other professors also helping teach this section
+          default: []
+        section_id:
+          type: string
+          description: Section id
+          default: "01"
+        section_type:
+          type: string
+          description: Type of section
+          default: Class
+        term_id:
+          type: integer
+          description: Term id
+          default: 201710
+        times:
+          type: json
+          description: Times the second is offered
+          default:  {day_of_week: MR, end_date: "2016-12-07", end_time: "09:05:00", start_date: "2016-09-07", start_time: "08:00:00"}
+        waitlist:
+          type: integer
+          description: Number of people on the waitlist
+          default: 0
