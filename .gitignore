@@ -5,4 +5,5 @@ env/
 password.py
 db_backup
 db_backup/
+.pyc
 .env
