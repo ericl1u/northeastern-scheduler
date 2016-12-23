@@ -1,10 +1,8 @@
 __pycache__/
-all_data
-all_data_insert
 env/
-password.py
-db_backup
 db_backup/
-.pyc
-.env
-.log
+db_backup
+*.pyc
+*.log
+.DS_Store
+.DS_Store?
