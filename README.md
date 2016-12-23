@@ -47,6 +47,13 @@ Run tests:
     
 Fill database:
 
+    http://localhost:5000/update/courses
+    http://localhost:5000/update/schedules
+    
+To fill trace, log into MyNEU, get cookie and paste in
+
+    http://localhost:5000/update/trace
+
 Test API:
 
     python3 run.py
