@@ -28,8 +28,8 @@ class Config(object):
     }
     OAUTH_CREDENTIALS = {
         'facebook': {
-            'id': '523775191157144',
-            'secret': '20fa88dd03bc02e82acd6b62e7d8a306'
+            'id': 'id',
+            'secret': 'secret'
         }
     }
 
@@ -40,13 +40,6 @@ class Config(object):
     CACHE_TYPE = 'redis'
     CACHE_KEY_PREFIX = 'f'
     CACHE_REDIS_URL = 'redis://localhost:6379/0'
-
-    OAUTH_CREDENTIALS = {
-        'facebook': {
-            'id': '523775191157144',
-            'secret': '20fa88dd03bc02e82acd6b62e7d8a306'
-        }
-    }
 
 
 class ProductionConfig(Config):
