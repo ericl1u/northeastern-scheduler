@@ -1,6 +1,16 @@
-#API for Northeastern courses, sechdules, and professors
+# Northeastern Schedule API
+
+To choose classes at Northeastern University, students use an internal tool to query for available classes and schedules based on certain criteria. These queries are quite simple and yet they take very to complete.
+
+My project provides a way to scrape Northeastern's scheduling resources and a web service that allows for much faster and detailed querying. Everything is written in Python 3, using BeautifulSoup for parsing and Flask for the web service. I used PostgreSQL as my database. A Swagger service is also provided.
+ 
+My project provides many features existing solutions do not: integration of professor ratings/information with classes, powerful queries that allow for customizable filters, full text search on class descriptions, and fast queries.
+
+The frontend is still in development and the service is not running anywhere right now. However, you can run the backend on your own machine.
 
 Everything is written in with Python 3
+
+## Setup
 
 Create a virtual environment:
 
